@@ -1,0 +1,80 @@
+/*.header-outer-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(20, 20, 20);
+  background-color: transparent;
+  height: 10vh;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+  background-color: red;
+}
+.nav-black {
+  background-color: rgb(20, 20, 20);
+}
+.header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-outer-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Change to desired color */
+  height: 10vh;
+  color: white;
+  z-index: 1;
+  transition: background-color 0.5s ease-in;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.header-left ul,
+.header-right ul {
+  display: flex;
+  gap: 15px; /* Space between items */
+  list-style: none;
+}
+
+.header-left ul li,
+.header-right ul li {
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Example styling for hover effect */
+.header-left ul li:hover,
+.header-right ul li:hover {
+  color: #b3b3b3;
+}
+
